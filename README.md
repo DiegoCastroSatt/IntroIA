@@ -1,2 +1,2 @@
 # Ejercicios_IA
-ejercicios motivacionales y de las clases
+ejercicios motivacionales y de las classes
