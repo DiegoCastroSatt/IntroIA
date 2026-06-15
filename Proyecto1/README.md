@@ -6,8 +6,8 @@ Este proyecto busca analizar algunos factores asociados a la salud mental en ado
 ## Descripción del Dataset:
 El dataset utilizado corresponde a `Teen_Mental_Health_Dataset.csv`, sacado desde https://www.kaggle.com/datasets/sunil123kumar/social-media-impact-on-mental-health compuesto por más de 1000 registros y 13 variables. Que tiene información relacionada con la salud mental de adolescentes y diversos factores que pueden influir en ella. 
 
-## Justificación del modelo(s) seleccionado.
-Se utilizaron los siguientes modelos:
+## Justificación de los modelos seleccionados.
+Se utilizaron los siguientes modelos para compararlos entre ellos y determinar cual entrega mejores resulados:
 
 ### Modelo 1: Regresión Logistica
 Se ocupa la Regresión Logica ya que el problema corresponde a un clasificación binaria. La variable que ocuparé en esta sección es depression_label, la cual indica si existen o no indicadores de depresión en adolescentes.
