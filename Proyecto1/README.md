@@ -32,6 +32,7 @@ Los modelos de Regrersión Logisica y Random Forest entregaron:
 |---------|----------|-----------|--------|----------|
 | Logistic Regression | 52.63% | 55.81% | 52.63% | 53.63% |
 | Random Forest | 86.84% | 86.81% | 86.84% | 86.74% |
+Los resultados muestran que Random Forest obtuvo un mejor desempeño en todas las métricas evaluadas.
 
 ## Conclusiones
 
