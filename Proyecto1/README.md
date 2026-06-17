@@ -23,7 +23,7 @@ La **Regresión Logística** permitio estimar la probabilidad de que una observa
  3. **Feature Engineering:** Se calculó la tasa de mortalidad, tasa de recuperación y la tasa de casos activos, lo que nos permite representar como estaba la situación sanitaria en cada país. Aparte fue construida una variable (Risk_Level), que se encargo de clasificar en las categorias Bajo, Medio y Alto según los niveles que se pueden observar. Luego se aplico un StandarScaler para normalizar las variables.
  4. **PCA:** Se redujo la dimensionalidad del conjuhto de datos, y así nos permitió seleccionar cuatro componentes principales, para conseervar aproximadamente el 98% de la varianza total de los datos.
  5. **Logistic Regresion:** Se usó el modelo de Regresión Logística utilizando los componentes obtenidos mediante PCA. Posteriormente se evaluó su desempeño mediante Accuracy, Precision, Recall y F1-Score.
- 6. **Random Forest:** Se empleó el modelo Random Forest utilizando los mismos datos procesados y los componentes principales. El modelo fue evaluado utilizando las mismas métricas para permitir una comparación objetiva con la Regresión Logística.
+ 6. **Random Forest:** Se empleó el modelo Random Forest utilizando los mismos datos entrenados y los componentes principales. El modelo fue evaluado utilizando las mismas métricas para permitir una comparación objetiva con la Regresión Logística.
  7. **Comparación de Resultados:** Se comparó el desempeño de ambos modelos utilizando métricas de clasificación y matrices de confusión, permitiendo identificar cuál de ellos entregó mejores resultados para la clasificación del nivel de riesgo.
  
 ## Resultados obtenidos
