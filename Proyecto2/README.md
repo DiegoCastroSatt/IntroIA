@@ -66,13 +66,14 @@ La matriz de confusión permitió identificar las clases con mayor dificultad de
 - Jupyter Notebook
 
 ## Estructura del repositorio
+```
 Proyecto2/
 │
 ├── Twitter.ipynb
 ├── README.md
 ├── environment.yml
 └── twitter_training.csv
-
+```
 ## Conclusiones
 Se desarrolló un sistema de clasificación automática de sentimientos utilizando un modelo de Deep Learning basado en BERT.
 El análisis exploratorio permitió comprender las características del conjunto de datos antes del entrenamiento y generar variables descriptivas útiles para su análisis.
