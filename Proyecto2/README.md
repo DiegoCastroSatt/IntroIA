@@ -19,7 +19,7 @@ Para resolver este problema se seleccionó **DistilBERT**, un modelo Transformer
 - Comprende el contexto de cada palabra dentro de la oración, mejorando la interpretación del texto.
 - Presenta un excelente desempeño en tareas de clasificación de texto.
 - Es adecuado para el análisis de sentimientos en tweets debido a su capacidad para interpretar el contexto del lenguaje.
-> **Entorno de desarrollo:** El proyecto fue desarrollado y entrenado en un *macOS** utilizando Python, PyTorch y la librería Transformers de Hugging Face.
+> **Entorno de desarrollo:** El proyecto fue desarrollado y entrenado en un *macOS**.
 
 # Metodología aplicada (paso a paso).
 1. **Carga y Visualización de los Datos:**  
@@ -30,7 +30,7 @@ Se realizó un análisis exploratorio del conjunto de datos para comprender las 
 Se generaron nuevas variables descriptivas a partir del contenido textual de los tweets. Se calculó la longitud del texto y la cantidad de palabras presentes en cada tweet para obtener información adicional sobre las características de los mensajes. Además, las etiquetas de sentimiento fueron transformadas desde valores categóricos a valores numéricos para que pudieran ser utilizadas por el modelo de Deep Learning:
 Negative = 0, Neutral = 1, Positive = 2 e Irrelevant = 3.
 4. **Preprocesamiento y Tokenización:**  
-Los textos fueron preparados utilizando el Tokenizer oficial del modelo DistilBERT (`distilbert-base-uncase`). A diferencia de métodos tradicionales, no se aplicó eliminación manual de palabras ni lematización, ya que BERT utiliza representaciones contextuales capaces de interpretar el significado de las palabras según su contexto. Los tweets fueron transformados en secuencias numéricas mediante `input_ids` y `attention_mask`, permitiendo su procesamiento mediante redes neuronales Transformer.
+Los textos fueron preparados utilizando el Tokenizer oficial del modelo DistilBERT (`distilbert-base-uncase`). A diferencia de métodos tradicionales, no se aplicó eliminación manual de palabras ni lematización. Los tweets fueron transformados en secuencias numéricas mediante `input_ids` y `attention_mask`, permitiendo su procesamiento mediante redes neuronales Transformer.
 5. **Creación del Dataset utilizando PyTorch:**  
 Se implementó una clase personalizada utilizando PyTorch para estructurar los datos de entrada del modelo. Esta etapa permitió organizar los tweets tokenizados junto con sus respectivas etiquetas, generando los conjuntos necesarios para el entrenamiento y validación del modelo.
 6. **Entrenamiento del Modelo Transformer (DistilBERT)**
