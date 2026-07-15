@@ -49,6 +49,7 @@ El modelo obtuvo un Accuracy de **0.171**, lo que indica que logró clasificar c
 - **Precision:** 0.1115
 - **Recall:** 0.171
 - **F1-Score:** 0.0596
+
 Estos resultados muestran que el modelo presenta dificultades para distinguir correctamente entre las diferentes categorías de sentimiento. Si bien el modelo fue capaz de extraer ciertas características de los textos gracias al conocimiento adquirido durante su preentrenamiento, aún presenta una baja capacidad de generalización sobre este conjunto de datos.
 La distribución de las clases en el conjunto de prueba fue:
 - **Negative:** 22.312 tweets
