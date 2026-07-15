@@ -32,18 +32,16 @@ Negative = 0, Neutral = 1, Positive = 2 e Irrelevant = 3.
 Los textos fueron preparados utilizando el Tokenizer oficial del modelo BERT (`distilbert-base-uncase`). A diferencia de métodos tradicionales, no se aplicó eliminación manual de palabras ni lematización, ya que BERT utiliza representaciones contextuales capaces de interpretar el significado de las palabras según su contexto. Los tweets fueron transformados en secuencias numéricas mediante `input_ids` y `attention_mask`, permitiendo su procesamiento mediante redes neuronales Transformer.
 5. **Creación del Dataset utilizando PyTorch:**  
 Se implementó una clase personalizada utilizando PyTorch para estructurar los datos de entrada del modelo. Esta etapa permitió organizar los tweets tokenizados junto con sus respectivas etiquetas, generando los conjuntos necesarios para el entrenamiento y validación del modelo.
-6. **Entrenamiento del Modelo Transformer (BERT):**  
-Se utilizó el modelo preentrenado BERT adaptado para una tarea de clasificación multiclase con cuatro categorías de salida. El entrenamiento se realizó utilizando el conjunto `twitter_training.csv`. Además, se aplicaron técnicas de regularización como Weight Decay y Dropout incorporado en la arquitectura de BERT para reducir el sobreajuste.
+6. **Entrenamiento del Modelo Transformer (DistilBERT)**
+Se utilizó el modelo preentrenado DistilBERT adaptado para una tarea de clasificación multiclase con cuatro categorías de salida. El entrenamiento se realizó utilizando el conjunto de datos `twitter_training.csv`. Además, se aplicaron técnicas de regularización como **Weight Decay** y el **Dropout** incorporado en la arquitectura del modelo para reducir el sobreajuste.
 7. **Evaluación del Modelo:**  
 El desempeño del modelo fue evaluado utilizando métricas de clasificación como Accuracy, Precision, Recall y F1-Score. También se generó una matriz de confusión para analizar el comportamiento del modelo en cada categoría de sentimiento e identificar posibles errores de clasificación.
 8. **Predicción de Nuevos Tweets:**  
-Finalmente, se implementó una función de predicción capaz de recibir nuevos tweets como entrada, realizar la tokenización mediante BERT y entregar la categoría de sentimiento predicha por el modelo entrenado.
+Finalmente, se implementó una función de predicción capaz de recibir nuevos tweets como entrada, realizar la tokenización y entregar la categoría de sentimiento predicha por el modelo entrenado.
 6. **Evaluación**
 Finalmente se probaron nuevas publicaciones para verificar el funcionamiento del clasificador.
 
 ## Resultados
-### Resultados del modelo
-
 El modelo obtuvo un Accuracy de **0.171**, lo que indica que logró clasificar correctamente aproximadamente el 17.1% de los tweets del conjunto de prueba. Las métricas obtenidas fueron:
 - **Accuracy:** 0.171
 - **Precision:** 0.1115
