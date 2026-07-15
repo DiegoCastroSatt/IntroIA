@@ -38,42 +38,25 @@ Se utilizó el modelo preentrenado BERT adaptado para una tarea de clasificació
 El desempeño del modelo fue evaluado utilizando métricas de clasificación como Accuracy, Precision, Recall y F1-Score. También se generó una matriz de confusión para analizar el comportamiento del modelo en cada categoría de sentimiento e identificar posibles errores de clasificación.
 8. **Predicción de Nuevos Tweets:**  
 Finalmente, se implementó una función de predicción capaz de recibir nuevos tweets como entrada, realizar la tokenización mediante BERT y entregar la categoría de sentimiento predicha por el modelo entrenado.
-
-## 6. Evaluación
-El desempeño del modelo fue evaluado mediante:
-- Accuracy
-- Precision
-- Recall
-- F1-score
-- Matriz de confusión
+6. **Evaluación**
 Finalmente se probaron nuevas publicaciones para verificar el funcionamiento del clasificador.
 
 ## Resultados
-El modelo logró clasificar correctamente la mayor parte de los tweets del conjunto de prueba.
-Las métricas obtenidas muestran que el modelo es capaz de aprender patrones semánticos presentes en los textos gracias al conocimiento adquirido durante el preentrenamiento.
-La matriz de confusión permitió identificar las clases con mayor dificultad de clasificación y analizar los principales errores del modelo.
+### Resultados del modelo
 
-## Tecnologías utilizadas
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-Learn
-- PyTorch
-- Hugging Face Transformers
-- Datasets
-- Jupyter Notebook
+El modelo obtuvo un Accuracy de **0.171**, lo que indica que logró clasificar correctamente aproximadamente el 17.1% de los tweets del conjunto de prueba. Las métricas obtenidas fueron:
+- **Accuracy:** 0.171
+- **Precision:** 0.1115
+- **Recall:** 0.171
+- **F1-Score:** 0.0596
+Estos resultados muestran que el modelo presenta dificultades para distinguir correctamente entre las diferentes categorías de sentimiento. Si bien el modelo fue capaz de extraer ciertas características de los textos gracias al conocimiento adquirido durante su preentrenamiento, aún presenta una baja capacidad de generalización sobre este conjunto de datos.
+La distribución de las clases en el conjunto de prueba fue:
+- **Negative:** 22.312 tweets
+- **Positive:** 20.618 tweets
+- **Neutral:** 18.051 tweets
+- **Irrelevant:** 12.842 tweets
+El análisis mediante la matriz de confusión permitió identificar las clases que presentan mayor confusión entre sí, evidenciando los principales errores de clasificación y posibles oportunidades de mejora mediante un mayor ajuste del modelo, aumento de datos de entrenamiento o técnicas de optimización.
 
-## Estructura del repositorio
-```
-Proyecto2/
-│
-├── Twitter.ipynb
-├── README.md
-├── environment.yml
-└── twitter_training.csv
-```
 ## Conclusiones
 Se desarrolló un sistema de clasificación automática de sentimientos utilizando un modelo de Deep Learning basado en BERT.
 El análisis exploratorio permitió comprender las características del conjunto de datos antes del entrenamiento y generar variables descriptivas útiles para su análisis.
